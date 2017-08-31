@@ -143,7 +143,7 @@ rates_$IDX :: TransmissionPolicies(DEFAULT rates_default_$IDX);
 
 rc_$IDX :: RateControl(rates_$IDX);
 
-FromDevice($IFNAME, PROMISC false, OUTBOUND true, SNIFFER false)
+FromDevice($IFNAME, PROMISC false, OUTBOUND true, SNIFFER false, BURST 1000)
   -> RadiotapDecap()
   -> FilterPhyErr()
   -> rc_$IDX
