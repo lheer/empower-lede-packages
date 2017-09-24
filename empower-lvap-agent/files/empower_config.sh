@@ -170,7 +170,7 @@ switch_data[$IDX]
   IDX=$(($IDX+1))
 done
 
-echo """kt :: KernelTap(10.0.0.1/24, BURST 50, DEV_NAME $VIRTUAL_IFNAME)
+echo """kt :: KernelTap(10.0.0.1/24, BURST 500, DEV_NAME $VIRTUAL_IFNAME)
   -> wifi_encap :: EmpowerWifiEncap(EL el, DEBUG $DEBUG)
   -> switch_data;
 
