@@ -175,8 +175,7 @@ echo """kt :: KernelTap(10.0.0.1/24, BURST 500, DEV_NAME $VIRTUAL_IFNAME)
   -> switch_data;
 
 ctrl :: Socket(TCP, $MASTER_IP, $MASTER_PORT, CLIENT true, VERBOSE true, RECONNECT_CALL el.reconnect)
-    -> el :: EmpowerLVAPManager(EMPOWER_IFACE $VIRTUAL_IFNAME,
-                                WTP $WTP,
+    -> el :: EmpowerLVAPManager(WTP $WTP,
                                 EBS ebs,
                                 EAUTHR eauthr,
                                 EASSOR eassor,
