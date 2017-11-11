@@ -23,9 +23,9 @@ Code is released under the Apache License, Version 2.0.
 
 ```
   $: cd $TOPDIR
-  $: echo 'src-git empower https://github.com/5g-empower/empower-openwrt-packages-15.05.git' >> feeds.conf.default
+  $: echo 'src-git empower https://github.com/lheer/empower-lede-packages.git' >> feeds.conf.default
   $: ./scripts/feeds update empower
-  $: ./scripts/feeds install -a -p empower
+  $: ./scripts/feeds install -a -p empower-lvap-agent
   $: make menuconfig
-  $: select Network -> empower-agent
+  $: select Network -> empower-lvap-agent
 ```
